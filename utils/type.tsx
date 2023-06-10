@@ -1,10 +1,10 @@
 export type FormProps = {
-  type: string;
+  type: "Create" | "Edit";
   post: {
     prompt: string;
     tag: string;
   };
-  setPost: Function;
+  setPost: React.Dispatch<React.SetStateAction<any>>;
   submitting: boolean;
   handleSubmit: React.FormEventHandler<HTMLFormElement>;
 };
