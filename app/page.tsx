@@ -1,3 +1,5 @@
+import Feed from "@components/Feed";
+
 export default function HomePage() {
   return (
     <section className="w-full flex-center flex-col">
@@ -9,6 +11,7 @@ export default function HomePage() {
         Promptopia is an open-aource AI prompting tool for modern wo0rld to
         discover, create and share creative prompts
       </p>
+      <Feed />
     </section>
   );
 }
