@@ -31,6 +31,7 @@ const Nav = () => {
           alt="Promptopia"
           className="object-contain"
         />
+        <p className="logo_text">Promptopia</p>
       </Link>
 
       {/* Desltop Navigation */}
