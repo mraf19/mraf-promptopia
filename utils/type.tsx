@@ -19,11 +19,19 @@ export type PromptTypes = {
 export type PromptCardTypes = {
   data: PromptTypes;
   handleTagClick?: Function;
-  handleEdit?: React.MouseEvent<HTMLElement>;
-  handleDelete?: React.MouseEvent<HTMLElement>;
+  handleEdit?: Function;
+  handleDelete?: Function;
 };
 
 export type PromptCardListType = {
   data: PromptTypes[];
   handleTagClick?: Function;
+};
+
+export type ProfileProps = {
+  name: string;
+  desc: "Welcome to your personalized profile page. Share your exceptional prompts and inspire others with the power of your imagination";
+  data: PromptTypes[];
+  handleEdit?: Function;
+  handleDelete?: Function;
 };
