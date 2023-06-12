@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { PromptTypes } from "@utils/type";
-import Profile from "@components/Profile";
+import ProfileComp from "@components/Profile";
 
 const ProfilePage = () => {
   const { data: session } = useSession();
@@ -46,7 +46,7 @@ const ProfilePage = () => {
     if (session?.user.id) fetchUserPosts();
   }, []);
   return (
-    <Profile
+    <ProfileComp
       data={posts}
       name="My"
       desc="Welcome to your personalized profile page. Share your exceptional prompts and inspire others with the power of your imagination"

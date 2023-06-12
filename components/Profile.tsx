@@ -2,7 +2,7 @@ import { ProfileProps, PromptTypes } from "@utils/type";
 import React from "react";
 import PromptCard from "./PromptCard";
 
-const Profile = ({
+const ProfileComp = ({
   name,
   desc,
   data,
@@ -30,4 +30,4 @@ const Profile = ({
   );
 };
 
-export default Profile;
+export default ProfileComp;
