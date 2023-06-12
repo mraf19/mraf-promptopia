@@ -38,6 +38,9 @@ const ProfilePage = () => {
   };
 
   useEffect(() => {
+    if (!session?.user.id) {
+      return router.push("");
+    }
     const fetchUserPosts = async () => {
       const response = await fetch(`/api/users/${session?.user.id}/posts`);
       const data = await response.json();
